@@ -1,0 +1,41 @@
+.price {
+    width: 320px;
+    margin: 0 auto;
+    outline: 2px solid yellow;
+}
+
+.price__wrapper {
+    width: 280px;
+    margin: 0 auto;
+
+}
+
+.price__title {
+    margin: 0;
+    padding: 0;
+}
+
+.price__discount-time {
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width: @tablet-width) {
+    .price { 
+        width: 768px;
+    }
+
+    .price__wrapper {
+        width: 640px;
+    }
+}
+
+@media(min-width: @desktop-width) {
+    .price {
+        width: 1200px;
+    }
+
+    .price__wrapper {
+        width: 960px;
+    }
+}

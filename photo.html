@@ -7,18 +7,22 @@
         <title>Барбершоп «Бородинский»</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="photo__body">
         <header class="page-header">
-            <a class="page-header__logo">
-                <img class="page-header__logo-image" src="img/logotype-mobile.svg"
-                width="226" height="30" alt="Барбершоп «Бородинский»">
+            <a class="page-header__logo page-header__logo--inner">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg"> 
+                    <img class="page-header__logo-image" src="img/logotype-mobile.svg"
+                    
+                    alt="Барбершоп «Бородинский»">
+                </picture>
             </a>  
             <nav class="main-nav">
-                <button class="main-nav__toggle" type="button">
-                    Открыть меню
-                </button>
+                <button class="main-nav__toggle" type="button"></button>
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list site-list">
                         <li class="site-list__item site-list__item--active">
@@ -45,7 +49,7 @@
                 </div>    
             </nav>  
         </header>
-        <main class="page-main">
+        <!-- <main class="page-main__photo"> -->
             <section class="works">
                 <div class="works__wrapper">
                     <h1 class="visually-hidden">Барбершоп «Бородинский» - истинно мужская классика.</h1>
@@ -54,59 +58,75 @@
                     <ul class="works__list works-list">
                         <li class="works__item works__item--work-of-month">
                             <div class="works__photo">
-                                <img class="works__image" src="" width="" height="" alt="Пример работы">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
+                                    <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg">   
+                                    <img class="works__image" src="img/photo-1-mobile.jpg" alt="Пример работы">
+                                </picture>
                             </div>
                             <div class="works__info">
                                 <b class="works__name">Лжепетр Мчиславский</b>
                                 <p class="works__text">Где я только не стригся, но так как это
-                                    делаете вы - не умеет никто другой! Еще раз спасибо и до скорого.
+                                    делаете вы - не умеет никто другой! Еще раз спасибо и до скорого!
                                 </p>
-                                <ul class="works__list type-list">
-                                    <li class="works__item works__item--haircut">Стрижка</li>
-                                    <li class="works__item works__item--shaving">Бритье</li>
-                                    <li class="works__item works__item--mustache">Усы</li>
+                                <ul class="works__type-list type-list">
+                                    <li class="works__type-item works__type-item--haircut">Стрижка</li>
+                                    <li class="works__type-item works__type-item--shaving">Бритье</li>
+                                    <li class="works__type-item works__type-item--mustache">Усы</li>
                                 </ul>
                             </div>
                         </li>
                         <li class="works__item">
                             <div class="works__photo">
-                                <img class="works__image" src="" width="" height="" alt="Пример работы">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
+                                        <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg">   
+                                        <img class="works__image" src="img/photo-2-mobile.jpg" alt="Пример работы">
+                                    </picture>
                             </div>
                             <div class="works__info">
                                 <b class="works__name">Саша Мальцев</b>
                                 <p class="works__text">Попросил омолодить и омолодили! Кто теперь скажет,
                                     что мне 45?
                                 </p>
-                                <ul class="works__list type-list">
-                                    <li class="works__item works__item--haircut">Стрижка</li>
+                                <ul class="works__type-list type-list">
+                                    <li class="works__type-item works__type-item--haircut">Стрижка</li>
                                 </ul>
                             </div>
                         </li>
                         <li class="works__item">
                             <div class="works__photo">
-                                    <img class="works__image" src="" width="" height="" alt="Пример работы">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
+                                        <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg">   
+                                        <img class="works__image" src="img/photo-3-mobile.jpg" alt="Пример работы">
+                                    </picture>
                             </div>
                             <div class="works__info">
                                 <b class="works__name">Владимир Иванович</b>
                                 <p class="works__text">К зимнему сезону готов!
                                 </p>
-                                <ul class="works__list type-list">
-                                    <li class="works__item works__item--barber">Борода</li>
-                                    <li class="works__item works__item--mustache">Усы</li>
+                                <ul class="works__type-list type-list">
+                                    <li class="works__type-item works__type-item--barber">Борода</li>
+                                    <li class="works__type-item works__type-item--mustache">Усы</li>
                                 </ul>
                             </div>
                         </li>
                         <li class="works__item">
                             <div class="works__photo">
-                                    <img class="works__image" src="" width="" height="" alt="Пример работы">
+                                    <picture>
+                                            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
+                                            <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg">   
+                                            <img class="works__image" src="img/photo-4-mobile.jpg" alt="Пример работы">
+                                        </picture>
                             </div>
                             <div class="works__info">
                                 <b class="works__name">Винстон Синий</b>
                                 <p class="works__text">Как только заростаю и волосы начинают мешать видеть,
                                     сразу бегом в Бородинский!
                                 </p>
-                                <ul class="works__list type-list">
-                                    <li class="works__item works__item--haircut">Стрижка</li>
+                                <ul class="works__type-list type-list">
+                                    <li class="works__type-item works__type-item--haircut">Стрижка</li>
                                 </ul>
                             </div>
                         </li>
@@ -155,7 +175,7 @@
                     </div>
                 </div>
             </section>
-        </main>
+        <!-- </main> -->
         <footer class="page-footer">
             <div class="page-footer__wrapper">
                 <div class="page-footer__contacts contacts">
@@ -191,6 +211,7 @@
                 </div>
             
             </div>
-        </footer>        
+        </footer>  
+        <script src="js/external.js"></script> 
     </body>
 </html>

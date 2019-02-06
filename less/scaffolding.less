@@ -1,0 +1,146 @@
+@font-face {
+    font-weight: normal;
+    font-family: "PT Sans Narrow";
+    font-style: normal;
+    src: url("../fonts/PT_SansNarrowWebRegular.woff2") 
+    format("woff2"), url("../fonts/PT_SansNarrowWebRegular.woff")
+    format("woff");
+}
+
+@font-face {
+    font-weight: bold;
+    font-family: "PT Sans Narrow";
+    font-style: normal;
+    src: url("../fonts/PT_SansNarrowWebBold.woff2") 
+    format("woff2"), url("../fonts/PT_SansNarrowWebBold.woff")
+    format("woff");
+}
+
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    color:#f7f4f1;
+    font-style: normal;
+
+    background-color: @bg-darkgrey;
+    /*background-image: url("../img/barbershop-index-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 720px auto;
+}
+
+@media(min-width: @tablet-width) {
+    body {
+        background-image: url("../img/barbershop-index-tablet.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: 1178px auto;
+    }
+}
+
+@media(min-width: @desktop-width) {
+    body {
+        background-image: url("../img/barbershop-index-desktop.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: 1391px auto;
+    }*/
+}
+
+// .photo__body {
+    // background-color: @bg-lightgrey;
+// }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: no-wrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button {
+    display: block;
+    padding: 15px 30px;
+    height: 18px;
+    
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+
+    background-color: @bg-lightgrey;
+
+    border: 1px solid #e5ddd5;
+    cursor: pointer;
+
+    &:hover {
+        border-color: #d5cabe;
+      }
+    
+      &:active {
+        color: #958c84;
+        border-color: #d5cabe;
+        background-color: #d5cabe;
+      }
+    
+      &:disabled {
+        cursor: default;
+        color: #ffffff;
+        border-color: #aeaeae;
+        background-color: #aeaeae;
+      }
+}
+
+.slider__input {
+    display: none;
+}
+
+.slider__toggles {
+    height: 14px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.slider__toggle {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 23px;
+    border: 1px solid #ffffff;
+    background-color: rgba(255,255,255,0);
+    font-size: 0;
+    transform: rotate(45deg);
+    cursor: pointer;
+    &--dark {
+        border-color: #353535;
+        
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

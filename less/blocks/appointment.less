@@ -1,0 +1,44 @@
+.appointment {
+    width: 320px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+.appointment__wrapper {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.appointment__title {
+    margin: 0;
+    padding: 0;
+}
+
+.beard__list {
+    .reset-list();
+}
+
+.offers__list {
+    .reset-list();
+}
+
+@media(min-width: @tablet-width) {
+    .appointment { 
+        width: 768px;
+    }
+
+    .appointment__wrapper {
+        width: 640px;
+    }
+}
+
+@media(min-width: @desktop-width) {
+    .appointment {
+        width: 1200px;
+        margin-top: -379px;
+    }
+
+    .appointment__wrapper {
+        width: 960px;
+    }
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PT_SansNarrowWebBold';
+    src: url('fonts/PT_SansNarrowWebBold.eot');
+    src: url('fonts/PT_SansNarrowWebBold.eot') format('embedded-opentype'),
+         url('fonts/PT_SansNarrowWebBold.woff2') format('woff2'),
+         url('fonts/PT_SansNarrowWebBold.woff') format('woff'),
+         url('fonts/PT_SansNarrowWebBold.ttf') format('truetype'),
+         url('fonts/PT_SansNarrowWebBold.svg#PT_SansNarrowWebBold') format('svg');
+}

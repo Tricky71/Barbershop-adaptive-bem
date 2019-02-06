@@ -1,0 +1,92 @@
+.user-list__login {
+    position: relative;
+    display: block;
+    padding: 12px 51px;
+    padding-bottom: 13px;
+
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+
+    color: #ffffff;
+
+    background-color: #6a4d38;
+    border-top: 1px solid #886e5b;
+    
+}
+
+.user-list__login {
+    &:hover {
+        background-color: #755a46;
+        border-top-color: #755a46;
+    }
+
+    &:active {
+        color: rgba(255, 255, 255, 0.3);
+        background-color: #6a4d38;
+        border-top-color: #6a4d38;
+    }
+}
+
+.user-list__login::before {
+    content: url("../img/login.png");
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 14px;
+    left: 21px;
+
+}
+
+@media(min-width: @tablet-width) {
+    .user-list {
+        width: 60px;
+    }
+    .user-list__login {
+        width: 60px;
+        height: 70px;
+        padding: 0;
+        font-size: 0;
+
+        background: none;
+        border: none;
+        &:hover {
+            background-color: #000000;
+        }
+        
+    }
+
+    .user-list__login::before {
+        top: 29px;
+        left: 12px;
+    }
+
+}
+
+@media(min-width: @desktop-width) {
+    .user-list {
+        width: auto;
+        max-width: 160px;
+    }
+
+    .user-list__login {
+        width: auto;
+        height: auto;
+        padding-top: 25px;
+        padding-right: 30px;
+        padding-bottom: 23px;
+        padding-left: 50px;
+
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+            color: #000000;
+            background-color: #ffffff;
+        }
+
+    }
+}

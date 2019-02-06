@@ -1,0 +1,23 @@
+{
+  "name": "barbershop-2",
+  "version": "0.1.0",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "grunt": "~0.4.4",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-postcss": "^0.9.0",
+    "jshint-stylish": "latest"
+  },
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
