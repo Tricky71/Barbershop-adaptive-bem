@@ -1,41 +1,197 @@
 .price {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
-    outline: 2px solid yellow;
+    padding-top: 68px;
+    padding-bottom: 20px;
+    
 }
 
 .price__wrapper {
-    width: 280px;
     margin: 0 auto;
+    padding: 0 20px;
 
 }
 
 .price__title {
     margin: 0;
     padding: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.price__info {
+    width: 100%;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.price__table {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.price__table tr {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.col-1 {
+    display: none;
+}
+
+.col-2 {
+    font-weight: 700;
+}
+
+.col-3 {
+    width: 100%;
+    order: 3;
+}
+
+.col-4 {
+    margin-left: auto;
+}
+
+.price__discount {
+    position: relative;
+    padding: 30px 50px 30px 150px;
+    border: 1px solid #4a4a4a;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 58px;
+        height: 58px;
+        top: 50%;
+        left: 5%;
+        margin-top: -29px;
+        background-image: url("../img/clock.svg");
+        background-repeat: no-repeat;
+    }
 }
 
 .price__discount-time {
     margin: 0;
     padding: 0;
+    font-size: 20px;
+    line-height: 27px;
+    
 }
 
 @media(min-width: @tablet-width) {
     .price { 
-        width: 768px;
+        // width: 768px;
+        padding-top: 105px;
+        padding-bottom: 55px; 
     }
 
     .price__wrapper {
-        width: 640px;
+        width: 84%;
+    }
+
+    .price__title {
+        margin-bottom: 50px;
+        text-align: left;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .price__table {
+        border-collapse: collapse;
+        margin-bottom: 10px;
+    }
+
+    .price__table tr {
+        display: table-row;
+        // border: 1px solid #4a4a4a;
+    }
+
+    .price__table td {
+        border: 1px solid #4a4a4a;
+        padding: 15px 20px;
+    }
+
+    .col-1 {
+        display: table-cell;
+        color: #4a4a4a;
+        text-align: center;
+    }
+
+    .col-3 {
+        width: auto;
+    }
+
+    .price-bkt {
+        display: none;
+    }
+
+    .price__discount {
+        padding: 40px 50px 40px 185px;
+        &:before {
+            width: 70px;
+            height: 70px;
+            margin-top: -35px;
+        }
+        
+    }
+
+    .price__discount-time {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
     }
 }
 
 @media(min-width: @desktop-width) {
     .price {
-        width: 1200px;
+        // width: 1200px;
+        padding-top: 70px;
+        padding-bottom: 80px;
     }
 
     .price__wrapper {
         width: 960px;
+    }
+
+    .price__title {
+        margin-bottom: 50px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .price__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .price__table {
+        width: 65%;
+        margin-bottom: 0;
+    }
+
+    .price__discount {
+        box-sizing: border-box;
+        width: 28%;
+        padding: 200px 70px 25px 70px;
+        &:before {
+            width: 140px;
+            height: 140px;
+            margin: 0;
+            top: 35px;
+            left: 50%;
+            margin-left: -70px;
+        }
+    }
+
+    .price__discount-time {
+        font-size: 20px;
+        line-height: 27px;
+        text-transform: capitalize;
+        font-weight: 400;
+        text-align: center;
     }
 }

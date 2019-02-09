@@ -1,44 +1,100 @@
 .appointment {
-    width: 320px;
+    position: relative;
     margin: 0 auto;
-    outline: 2px solid red;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: @bg-lightgrey;
+    &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        bottom: -34px;
+        height: 34px;
+        background-image: url(../img/corner-light.svg);
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+    }
+    
 }
 
 .appointment__wrapper {
-    width: 280px;
+    position: relative;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .appointment__title {
     margin: 0;
     padding: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
 }
 
-.beard__list {
-    .reset-list();
+.appointment__button {
+    display: none;
 }
 
-.offers__list {
-    .reset-list();
+.submit__button {
+    width: 100%;
+    
 }
 
 @media(min-width: @tablet-width) {
-    .appointment { 
-        width: 768px;
+    .appointment {
+        padding-top: 60px;
+        padding-bottom: 75px;
+      &:before {
+        content:"";
+        position: absolute;
+        height: 34px;
+        left: 0;
+        right: 0;
+        top: -34px;
+        
+        background-image: url(../img/corner-double.svg);
+        background-repeat: no-repeat;
+     }
+      &::after {
+          display: none;
+      }
+    }    
+    
+    .appointment__wrapper {
+        width: 84%;
+        padding: 0;
     }
 
-    .appointment__wrapper {
-        width: 640px;
+    .appointment__title {
+        margin-bottom: 75px;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: left;
+    }
+
+    .appointment__button {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
 
 @media(min-width: @desktop-width) {
     .appointment {
-        width: 1200px;
-        margin-top: -379px;
+        padding-bottom: 87px;
+        &:before {
+            height: 68px;
+            top: -68px;
+        }
     }
-
     .appointment__wrapper {
-        width: 960px;
+        width: 80%;
+        max-width: 960px;
+        // padding-bottom: 85px;
     }
 }

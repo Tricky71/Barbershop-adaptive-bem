@@ -172,6 +172,7 @@
     .works__item {
         display: flex;
         margin-bottom: 40px;
+        
     }
 
     
@@ -182,7 +183,7 @@
     }
 
     .works__info {
-        padding: 40px 50px 20px 50px;;
+        padding: 40px 50px 20px 50px;
         display: flex;
         flex-direction: column;
         flex-grow: 1;
@@ -206,7 +207,10 @@
 
 @media(min-width: @desktop-width) {
     .works {
-       margin-top: -379px;
+    //    margin-top: -379px;
+       &:after {
+           display: none;
+       }
        &:before {
            height: 68px;
            top: -68px;
@@ -214,21 +218,46 @@
     }
 
     .works__wrapper {
-        width: 80%;
+        width: 960px;
+    }
+
+    .works__title {
+        margin-bottom: 90px;
     }
 
     .works__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        // align-items: stretch;
+        
     }
 
     .works__item {
-        // width: 294px;
-        outline: 2px solid wheat;
+        width: 294px;
+        flex-direction: column;
+        &--work-of-month  {
+            flex-direction: row;
+            width: 100%;
+        }
+        &:nth-child(n+2) {
+            margin-bottom: 0;
+        }
     }
 
-    .works__item--work-of-month {
-        width: 100%;
+    .works__info {
+        padding: 35px 34px 40px 34px;
+        
     }
+
+    .works__info--work-of-month {
+        padding: 130px 40px 40px 40px;
+    }
+
+    .works__type-item {
+        margin-bottom: 0;
+    }
+  
+
+    
 }

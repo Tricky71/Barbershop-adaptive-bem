@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru"></html>
-<html class="no-js"> 
+<html lang="ru">
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,15 +21,15 @@
                     alt="Барбершоп «Бородинский»">
                 </picture>
             </a>  
-            <nav class="main-nav">
+            <nav class="main-nav main-nav--closed main-nav--nojs">
                 <button class="main-nav__toggle" type="button"></button>
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list site-list">
-                        <li class="site-list__item site-list__item--active">
-                            <a>Главная</a>
-                        </li>
                         <li class="site-list__item">
-                            <a href="photo.html">Наши работы</a>
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="site-list__item site-list__item--active">
+                            <a>Наши работы</a>
                         </li>
                         <li class="site-list__item">
                             <a href="form.html">Записаться</a>
@@ -64,10 +64,10 @@
                                     <img class="works__image" src="img/photo-1-mobile.jpg" alt="Пример работы">
                                 </picture>
                             </div>
-                            <div class="works__info">
+                            <div class="works__info works__info--work-of-month">
                                 <b class="works__name">Лжепетр Мчиславский</b>
-                                <p class="works__text">Где я только не стригся, но так как это
-                                    делаете вы - не умеет никто другой! Еще раз спасибо и до скорого!
+                                <p class="works__text">Где я только не стригся, но так как 
+                                    делаете это<br>вы - не умеет никто другой! Еще раз спасибо и до скорого!
                                 </p>
                                 <ul class="works__type-list type-list">
                                     <li class="works__type-item works__type-item--haircut">Стрижка</li>
@@ -122,8 +122,8 @@
                             </div>
                             <div class="works__info">
                                 <b class="works__name">Винстон Синий</b>
-                                <p class="works__text">Как только заростаю и волосы начинают мешать видеть,
-                                    сразу бегом в Бородинский!
+                                <p class="works__text">Как только заростаю и волосы начинают мешать видеть
+                                    - бегом в Бородинский!
                                 </p>
                                 <ul class="works__type-list type-list">
                                     <li class="works__type-item works__type-item--haircut">Стрижка</li>
@@ -139,34 +139,34 @@
                     <div class="price__info">
                         <table class="price__table">
                             <tr>
-                                <td>1</td>
-                                <td>Классическая стрижка</td>
-                                <td>с мытьем головы</td>
-                                <td>1 500 руб.</td>
+                                <td class="col-1">1</td>
+                                <td class="col-2">Классическая стрижка</td>
+                                <td class="col-3"><span class="price-bkt">(</span>с мытьем головы<span class="price-bkt">)</span></td>
+                                <td class="col-4">1 500 руб.</td>
                             </tr>
                             <tr>
-                                <td>2</td>
-                                <td>Современный вариант</td>
-                                <td>с мытьем головы</td>
-                                <td>1 500 руб.</td>
+                                <td class="col-1">2</td>
+                                <td class="col-2">Современный вариант</td>
+                                <td class="col-3"><span class="price-bkt">(</span>с мытьем головы<span class="price-bkt">)</span></td>
+                                <td class="col-4">1 500 руб.</td>
                             </tr>
                             <tr>
-                                <td>3</td>
-                                <td>Индивидуальный подход</td>
-                                <td>с мытьем головы</td>
-                                <td>2 000 руб.</td>
+                                <td class="col-1">3</td>
+                                <td class="col-2">Индивидуальный подход</td>
+                                <td class="col-3"><span class="price-bkt">(</span>с мытьем головы<span class="price-bkt">)</span></td>
+                                <td class="col-4">2 000 руб.</td>
                             </tr>
                             <tr>
-                                <td>4</td>
-                                <td>Бритье бороды</td>
-                                <td>без мытья</td>
-                                <td>500 руб.</td>
+                                <td class="col-1">4</td>
+                                <td class="col-2">Бритье бороды</td>
+                                <td class="col-3"><span class="price-bkt">(</span>без мытья<span class="price-bkt">)</span></td>
+                                <td class="col-4">500 руб.</td>
                             </tr>
                             <tr>
-                                <td>5</td>
-                                <td>Бритье головы</td>
-                                <td>с мытьем головы</td>
-                                <td>1 000 руб.</td>
+                                <td class="col-1">5</td>
+                                <td class="col-2">Бритье головы</td>
+                                <td class="col-3"><span class="price-bkt">(</span>с мытьем головы<span class="price-bkt">)</span></td>
+                                <td class="col-4">1 000 руб.</td>
                             </tr>
                         </table>
                         <div class="price__discount">
@@ -192,15 +192,15 @@
                     <ul class="social__list">
                         <li class="social__item">
                             <a class="social-link social-link--vkontakte"
-                                href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                                href="https://vk.com/htmlacademy"></a>
                         </li>
                         <li class="social__item">
                             <a class="social-link social-link--facebook"
-                                href="https://www.facebook.com/htmlacademy">Мы в Фейсбук</a>
+                                href="https://www.facebook.com/htmlacademy"></a>
                         </li>
                         <li class="social__item">
                             <a class="social-link social-link--instagram"
-                                href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+                                href="https://www.instagram.com/htmlacademy"></a>
                         </li>
                     </ul>
                 </div>
